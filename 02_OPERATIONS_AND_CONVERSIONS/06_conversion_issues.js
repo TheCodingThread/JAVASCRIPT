@@ -1,8 +1,8 @@
 let num1 = "53ab" //alphanumeric string
 
-let valueInNum1 = Number(num)
-console.log(typeof valueInNum)
-console.log(valueInNum) //When you retrieve the output, you will see 'NaN' which stands for 'Not a Number'
+let valueInNum1 = Number(num1)
+console.log(typeof valueInNum1)
+console.log(valueInNum1) //When you retrieve the output, you will see 'NaN' which stands for 'Not a Number'
 
 let num2 = true //boolean value
 let valueInNum2 = Number(num2)
