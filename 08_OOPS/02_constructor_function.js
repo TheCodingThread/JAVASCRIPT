@@ -4,7 +4,7 @@ function Car(company, model){ // Name of the constructor function should start w
     this.model = model;
 }
 
-let car1 = new Car("Honda", "Civic"); // Creating an instance of Car
+let car1 = new Car("Honda", "City"); // Creating an instance of Car
 console.log(car1); // Car { company: 'Honda', model: 'Civic' }
 
 //2
