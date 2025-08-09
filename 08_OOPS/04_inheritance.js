@@ -10,10 +10,10 @@ class Accessory{
 }
 
 class Laptop extends Accessory { // Laptop class inherits from Accessory using 'extends' keyword
-    lap_details() {
+    details() {
         return `The laptop is ${this.company} ${this.model}`;
     }
 }
 
 let laptopItem = new Laptop("Asus", "Tuf A15");
-console.log(laptopItem.lap_details()); // The laptop is Asus Tuf A15
+console.log(laptopItem.details()); // The laptop is Asus Tuf A15
