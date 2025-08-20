@@ -10,4 +10,4 @@ class Accessory{ //name of class should start with capital letter
 }
 
 let item = new Accessory("Asus", "Tuf A15");
-console.log(item.details()); // The accessory is Tuf A15 from Asus
+console.log(item.details()); // Output: The accessory is Tuf A15 from Asus

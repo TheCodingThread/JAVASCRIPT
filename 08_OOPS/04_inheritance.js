@@ -16,4 +16,4 @@ class Laptop extends Accessory { // Laptop class inherits from Accessory using '
 }
 
 let laptopItem = new Laptop("Asus", "Tuf A15");
-console.log(laptopItem.details()); // The laptop is Asus Tuf A15
+console.log(laptopItem.details()); // Output: The laptop is Asus Tuf A15

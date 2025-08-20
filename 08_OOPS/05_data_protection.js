@@ -12,5 +12,5 @@ class bankAcc{
 }
 
 let acc1 = new bankAcc();
-console.log(acc1.deposit(1000)); // New balance is $1000
-console.log(acc1.getBalance()); // Your balance is $1000
+console.log(acc1.deposit(1000)); // Output: New balance is $1000
+console.log(acc1.getBalance()); // Output: Your balance is $1000
