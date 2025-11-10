@@ -14,7 +14,7 @@ function fetchData(){
 fetchData()
 .then((data)=>{
     console.log(data)
-    return `sebin`
+    return `TheCodingThread`
 })
 .then((name)=>console.log(name)) //chaining of then
 .catch((error)=>console.log(error))
