@@ -17,6 +17,12 @@ addTaskBtn.addEventListener("click", () =>{
     };
 
     tasks.push(newTask)
+    saveTasks() //write tasks to local storage
     todoIp.value = ""
     console.log(tasks)
 })
+
+//writing tasks to local storage
+function saveTasks(){
+    localStorage.setItem("tasks", JSON.stringify(tasks))
+}
