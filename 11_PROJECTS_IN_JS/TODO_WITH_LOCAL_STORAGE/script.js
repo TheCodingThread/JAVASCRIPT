@@ -21,12 +21,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tasks.push(newTask);
     saveTasks(); //write tasks to local storage
+    renderTask(newTask);
     todoIp.value = "";
     console.log(tasks);
   });
 
   function renderTask(task){
-    console.log(task);
+    const li = document.createElement("li")
+    li.setAttribute("data-id", task.id)
+    if(task.completed) li.classList.add("completed")
+    li.innerHTML = `
+    <span>${task.text}</span>
+    <button>delete</button>
+    `
+
+    li.addEventListener("click", (e) => {
+      if(e.target.tagName === "BUTTON") return
+      task.completed = !task.completed
+      li.classList.toggle("completed") //it toggles the class 'completed' on the 'li' element based on the value of 'task.completed'
+      saveTasks()
+    })
+
+    li.querySelector('button').addEventListener('click', (e) => {
+      e.stopPropagation() //prevent toggle from firing
+      tasks = tasks.filter((t) => t.id !== task.id) //removing the current 'li' from the 'tasks' array
+      li.remove() //removing from the frontend
+      saveTasks()
+    })
+
+    todoList.appendChild(li)
   }
 
   //writing tasks to local storage
